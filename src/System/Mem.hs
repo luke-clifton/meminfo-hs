@@ -12,4 +12,8 @@ parseMemInfo bs = case parseOnly parseFile bs of
 
 -- | Read `/proc/meminfo` and parse it into a `MemInfo`
 getMemInfo :: IO MemInfo
-getMemInfo = parseMemInfo <$> B.readFile "/proc/meminfo"
+getMemInfo = do
+    res <- parseMemInfo <$> B.readFile "/proc/meminfo"
+    case res of
+        Just x -> return x
+        Nothing -> fail "Could not parse /proc/meminfo"
