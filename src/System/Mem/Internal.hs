@@ -24,7 +24,7 @@ parseLine = do
     _ <- char ':'
     skipSpace
     value <- parseValue
-    mUnits <- optional (skipSpace *> parseUnits)
+    mUnits <- optional (skipWhile (==' ') *> parseUnits)
     endOfLine
     return (key, (value, mUnits))
 
