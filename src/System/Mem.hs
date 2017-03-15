@@ -1,7 +1,7 @@
 module System.Mem where
 
 import System.Mem.Internal
-import Data.Attoparsec (parseOnly)
+import Data.Attoparsec.ByteString.Char8 (parseOnly)
 import Data.ByteString (ByteString)
 import qualified Data.ByteString as B
 
