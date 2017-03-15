@@ -1,6 +1,6 @@
-module System.Mem where
+module System.MemInfo where
 
-import System.Mem.Internal
+import System.MemInfo.Internal
 import Data.Attoparsec.ByteString.Char8 (parseOnly)
 import Data.ByteString (ByteString)
 import qualified Data.ByteString as B

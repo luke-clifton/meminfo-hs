@@ -1,4 +1,4 @@
-module System.Mem.Internal where
+module System.MemInfo.Internal where
 
 import qualified Data.ByteString.Char8 as B
 import Data.Map (Map)

@@ -1,7 +1,7 @@
 name:                meminfo
-version:             0.1.0.0
-synopsis:            Library for reading /proc/meminfo
-description:         Library for reading /proc/meminfo
+version:             0.2.0.0
+synopsis:            Library for reading `/proc/meminfo`
+description:         Library for reading `/proc/meminfo`
 license:             BSD3
 license-file:        LICENSE
 author:              Luke Clifton
@@ -12,8 +12,8 @@ extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     System.Mem
-                     , System.Mem.Internal
+  exposed-modules:     System.MemInfo
+                     , System.MemInfo.Internal
   build-depends:       base >=4.9 && <5.0
                      , attoparsec >=0.13 && <0.14
                      , bytestring >=0.10 && <0.11
