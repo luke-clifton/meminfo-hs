@@ -1,4 +1,8 @@
-module System.MemInfo where
+module System.MemInfo
+    ( parseMemInfo
+    , getMemInfo
+    , MemInfo
+    ) where
 
 import System.MemInfo.Internal
 import Data.Attoparsec.ByteString.Char8 (parseOnly)
