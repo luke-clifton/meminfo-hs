@@ -5,7 +5,7 @@ description:         Library for reading `/proc/meminfo`
 license:             BSD3
 license-file:        LICENSE
 author:              Luke Clifton
-maintainer:          ltclifton@gmail.com
+maintainer:          lukec@themk.net
 category:            System
 build-type:          Simple
 extra-source-files:  ChangeLog.md
